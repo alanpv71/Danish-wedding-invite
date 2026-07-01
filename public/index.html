@@ -432,6 +432,42 @@ body{background:var(--cream);font-family:var(--font-main);color:var(--deep);over
 .p2-footer p{font-family:var(--font-main);font-size:17px;font-style:italic;color:var(--muted);line-height:1.65}
 .gold-rule{width:44px;height:.5px;background:var(--gold);margin:0 auto 18px}
 
+Now, here is my root 
+
+root{
+  --cream:#faf6ed;
+  --paper:#f1e8d6;
+  --gold:#ad8a55;
+  --gold-light:#c7a873;
+  --deep:#4a3a28;
+  --muted:#6b5640;
+  --rose:#e3d6bf;
+  --ink:#3c2f20;
+  --shadow:rgba(74,58,40,.16);
+  --font-main:'Cormorant Garamond',serif;
+  --font-display:'Cinzel',serif;
+}
+
+Here is my footer
+
+/* ── footer ── */
+.p2-footer{padding:34px 24px 28px;text-align:center;border-top:.5px solid var(--rose)}
+.p2-footer p{font-family:var(--font-main);font-size:17px;font-style:italic;color:var(--muted);line-height:1.65}
+.gold-rule{width:44px;height:.5px;background:var(--gold);margin:0 auto 18px}
+
+/* ── made by ── */
+.made-by{
+  padding:0 24px 28px;
+  text-align:center;
+  font-family:var(--font-main);
+  font-size:12px;
+  font-style:normal;
+  letter-spacing:.06em;
+  color:var(--gold-light);
+  opacity:.75;
+}
+.made-by .heart{color:var(--gold);font-style:normal;letter-spacing:0}
+
 /* ── confetti popper ── */
 .confetti-piece{
   position:fixed;pointer-events:none;z-index:999;
@@ -569,7 +605,9 @@ body{background:var(--cream);font-family:var(--font-main);color:var(--deep);over
   <p style="margin-top:40px;font-size:8px;letter-spacing:.1em;font-family:var(--font-display);color:var(--gold-light);opacity:0.7">Made with ❤️ by Alan</p>
   
   </div>
-
+<div class="made-by">
+  Made with <span class="heart">♥</span> by Alan
+</div>
 </section>
 
 <script>
